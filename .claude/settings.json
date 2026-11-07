@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__filesystem__read_file"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npm test"
+          }
+        ]
+      }
+    ]
+  }
+}
